@@ -1,11 +1,11 @@
 
-
-* {
-    margin: 0;
-    padding: 0;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+position: relative;
+background-color: white;
 }
-
-
 
 header{
 height: 40vh;
@@ -19,7 +19,6 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .icons{
 height: 55px;
 width: 200px;
-
 }
 
 .dropbtn {
@@ -151,12 +150,17 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: white;    
+}
+ 
+.container{
+   width: 100%;
+    height: 100%;
+    display: inline-block;
+    
+}
 
-}
-.top {
-    background-color:rgba(12, 23, 84);   
-}
+
 
 footer ul {
     list-style: none;
@@ -176,22 +180,60 @@ footer ul li a {
     padding: 5px 0px 5px 0px;
 }
 
-.bottom {
-    background-color: rgb(35, 88, 173);
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding: 20px 10px 48px 0px;
+.section img {
+    margin-top: 100px;
+    text-align: left;
+    cursor: none;
+    margin-left: 2%;
+    width: 65%;
+    height: 65%;
+
+.section {
+    margin-left: 75%;
+    transform: translateX(-50%);
+    bottom: 350px;
+    position: relative;
+    opacity: 0.85;
+    width: 40%;
+    height: 95%;
 }
-.bottom > a {
-    color: white;
+
+.section h2 {
+    font-weight: normal;
+    font-size: 35px;
+    top: 20px;
+    font-family: "NDRSansCondBlack", "Roboto Condensed", "HelveticaNeue-CondensedBold", Impact, sans-serif;
+    margin-left: 20px;
+
 }
-#copyright {
-    width: 100%;
-    display: flex;
-    align-self: center;
+
+.section p{
+    font-family: "NDRSansRegular", sans-serif;
+    
+    margin-left: 20px;
+    margin-top: 5%;
+    top: 20px;
+}
+
+
+.section h4{
+        font-family: "NDRSansRegular", sans-serif;
+        margin-left: 10px;
+    }
+
+
+.headerf{
+        margin-top: 5%;
+        top: 20px;
+        display: flex;
+        bottom: 20px;
+    }
+
+#logo{
+    margin-top: -4%;
+    width: 6%;
+    height: 6%;
+    margin-left: 20px;
 }
 
 @media only screen and (max-width: 850px){
@@ -200,4 +242,3 @@ nav{visibility: hidden;
     
 }
 
-}
