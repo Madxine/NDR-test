@@ -5,19 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>NDR.de</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 
+
 </head>
 
+
 <body>
-    <nav>
+
+    <nav id="smallbluebar">
         <p></p>
     </nav>
-    <main>
+    
+    <header>
+
+        <div id="radio">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">⌵ RADIO&TV</button>
+
+                <div id="myDropdown" class="dropdown-menu">
+                    <img class="icons" src="icons/TV.jpg">
+                    <a href="blank">Übersicht aller</a>
+                    <a href="#about">Sendungen</a>
+                    <a href="#contact">TV-Programm</a>
+                    <img class="icons" src="icons/media.jpg">
+                    <a href="blank">Mediathek A-Z</a>
+                    <a href="#about">Sendung verpasst</a>
+                    <img class="icons" src="icons/person.jpg">
+                    <img class="icons" src="icons/radio.jpg">
+                </div>
+
+            </div>
+            <img id="N" src="icons/NDR-icon.jpg">
+            <img id="m" src="icons/magnifier.jpg">
+        </div>
+        <nav>
+            <ul id="list">
+                <li>Nachrichten</li>
+                <li>Niedersachsen</li>
+                <li>Schlewig-Holstein</li>
+                <li>Mecklenburg-Vorpommern</li>
+                <li>Hamburg</li>
+                <li>Sport</li>
+                <li>Ratgeber</li>
+                <li>Kultur</li>
+                <li id="g">Geschichte</li>
+                <li id="Verkehr">Verkehr</li>
+                <li id="wetter">Wetter</li>
+            </ul>
+
+        </nav>
+    </header>
+   <main>
         <div class="article-item">
             <img src="https://www.ndr.de/nachrichten/info/galerialuebeck100_v-contentgross.jpg" alt="image of Karstadt">
             <h3>Galeria Kaufhof schließt acht Filialen im Norden</h3>
@@ -39,6 +83,94 @@
             <p>Nach einem Medienbericht werden drei Berliner verdächtigt, an dem Überfall auf einen Geldtransporter auf der A20 bei Gützkow beteiligt gewesen zu sein.</p>
         </div>
     </main>
+      <footer>
+    <div class="top">
+        <ul>
+            <li>
+                <h3>Der NDR</h3>
+                <a href="/">Unternehmen</a>
+                <a href="/">Karriere</a>
+                <a href="/">Kontakt</a>
+                <a href="/">Presse</a>
+                <a href="/">Transparenz</a>
+                <a href="/">Rundfunkbeitrag</a>
+                <a href="/">Empfang und Technik</a>
+                <a href="/">NDR Rundfunkrat</a>
+                <a href="/">NDR Verwaltungsrat</a>
+            </li>
+            <li>
+                <h3>Service</h3>
+                <a href="/">Wetter</a>
+                <a href="/">Verkehr</a>
+                <a href="/">Rezepte</a>
+                <a href="/">NDR Text</a>
+                <a href="/">Barierrefreiheit</a>
+                <a href="/">Leichte Sprache im NDR</a>
+                <a href="/">Ticketsk</a>
+                <a href="/">Shop</a>
+                <a href="/">Hilfe</a>
+                <a href="/">Korrekturen</a>
+                <a href="/">NDR Newsletter</a>
+                <a href="/">Kritik und Anregungen</a>
+            </li>
+            <li>
+                <h3>Themen</h3>
+                <a href="/">Klimawandel im Norden</a>
+                <a href="/">Bildungsangebote</a>
+                <a href="/">#NDRfragt</a>
+                <a href="/">NDR Datenjournalismus</a>
+                <a href="/">Ausflugtipps</a>
+                <a href="/">Wünsch Dir Deinen NDR</a>
+                <a href="/">Hand in Hand für Norddeutschland</a>
+                <a href="/">Themen A-Z</a>
+                <a href="/">Archiv: NDR Retro</a>
+            </li>
+            <li>
+                <a href="/">NDR Elbphilharmonie Orchester</a>
+                <a href="/">NDR Radiophilharmonie</a>
+                <a href="/">NDR Vokalensemble</a>
+                <a href="/">NDR Bigband</a>
+                <a href="/">Kirche im NDR</a>
+                <a href="/">Archive</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bottom">
+        <a href="/">Impressum</a>
+        <a href="/">Kontakt</a>
+        <a href="/">Datenschutz</a>
+        <a href="/">ARD.de</a>
+        <a href="/">Bildrechte</a> 
+        <br>
+        <p id="copyright">© Norddeutscher Rundfunk</p>
+    </div> 
+  </footer>
+
 </body>
+
+
+
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-menu");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
 
 </html>
