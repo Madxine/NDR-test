@@ -6,11 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
-  <footer>
+
+    <header>
+
+        <div id="radio">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">⌵ RADIO&TV</button>
+
+                <div id="myDropdown" class="dropdown-menu">
+                    <img class="icons" src="icons/TV.jpg">
+                    <a href="blank">Übersicht aller</a>
+                    <a href="#about">Sendungen</a>
+                    <a href="#contact">TV-Programm</a>
+                    <img class="icons" src="icons/media.jpg">
+                    <a href="blank">Mediathek A-Z</a>
+                    <a href="#about">Sendung verpasst</a>
+                    <img class="icons" src="icons/person.jpg">
+                    <img class="icons" src="icons/radio.jpg">
+                </div>
+
+            </div>
+            <img id="N" src="icons/NDR-icon.jpg">
+            <img id="m" src="icons/magnifier.jpg">
+        </div>
+        <nav>
+            <ul id="list">
+                <li>Nachrichten</li>
+                <li>Niedersachsen</li>
+                <li>Schlewig-Holstein</li>
+                <li>Mecklenburg-Vorpommern</li>
+                <li>Hamburg</li>
+                <li>Sport</li>
+                <li>Ratgeber</li>
+                <li>Kultur</li>
+                <li id="g">Geschichte</li>
+                <li id="Verkehr">Verkehr</li>
+                <li id="wetter">Wetter</li>
+            </ul>
+
+        </nav>
+    </header>
+   
+      <footer>
     <div class="top">
         <ul>
             <li>
@@ -72,6 +115,32 @@
         <p id="copyright">© Norddeutscher Rundfunk</p>
     </div> 
   </footer>
+
 </body>
+
+
+
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-menu");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
 
 </html>
