@@ -1,0 +1,31 @@
+body {
+    padding:0px;
+    margin:0;
+}
+
+main {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.7em;
+    margin:9em;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 1px;
+    
+}
+.article-item img{
+    width:100%;
+}
+.article-item h3 {
+    font-weight: 800;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+.article-item p {
+    font-weight: 300;
+}
+.article-item {
+    
+    width:40%;
+    
+}
