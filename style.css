@@ -3,14 +3,22 @@ body {
     margin:0;
 }
 
+nav {
+    color:white;
+    background-color: rgb(12, 23, 84);
+    padding:6px;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+}
 main {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
-    gap: 1.7em;
-    margin:9em;
+    flex-wrap: wrap;
+    
     font-family: 'Roboto', sans-serif;
-    word-spacing: 1px;
+    word-spacing: 0.5px;
+    max-width: 1300px;
     
 }
 .article-item img{
@@ -23,9 +31,10 @@ main {
 }
 .article-item p {
     font-weight: 300;
+    line-height: 1.5em;
 }
 .article-item {
-    
+    margin-right: 30.72px;
     width:40%;
     
 }
