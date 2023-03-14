@@ -1,0 +1,113 @@
+body{background-color: #0d1754;
+
+}
+header{
+height: 40vh;
+color: white;
+background-color: #0d1754;
+margin:0%;
+border:0%;
+padding: 0%;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.icons{
+height: 55px;
+width: 200px;
+
+}
+
+.dropbtn {
+    font-weight: 600;
+    background-color: #0d1754;
+    color: white;
+    padding-top: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+
+    display: none;
+    position: absolute;
+    background-color: #0d1754;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    padding-left: 50px;
+  }
+  
+
+  
+  .show {display: block;}
+
+
+#radio{display: flex;
+    justify-content: space-between;
+}
+
+#N{
+    margin-top: 0%;
+    padding-top: 0%;
+    width: 100px;
+    height: 50px;
+}
+
+#m{
+    margin-top: 0%;
+    padding-top: 0%;
+    width: 50px;
+    height: 50px;
+}
+
+
+#list{
+    
+    padding-left: 0%;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-left: 0%;
+}
+
+
+#g{
+padding-right: 15%;
+
+}
+#wetter{
+    display: flex;
+   align-self: flex-end;
+
+}
+
+#verkehr{
+    align-self: flex-end;
+
+}
+@media only screen and (max-width: 850px){
+
+nav{visibility: hidden;
+    
+}
+
+}
